@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+*{
+  font-family: "Yantramanav", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*============== ESTILIZAÇÂO CALENDARIO ===================*/
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child),
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child){
+  background-color: #8C52FF;
+  border: none;
+  box-shadow: -3px 7px 8px -4px rgba(0,0,0,0.80);
+  margin-left: 5px;
+}
+
+.fc .fc-daygrid-day-frame:hover {
+  background-color: #F0F0F0;
+  cursor: pointer;
+}
+
+.fc-day-sun .fc-daygrid-day-number,
+.fc-day-sat .fc-daygrid-day-number {
+  color: #FF0000;
+}
+
+.fc-day-today {
+  background-color: rgba(199, 171, 236, 0.75) !important; /* roxo mais claro */
+}
+
+.fc .fc-daygrid-day-number {
+  color: #000;
+}
+
+.fc .fc-view-harness, .fc .fc-button-group  {
+  position: sticky;
+}
+
+@media (max-width: 630px) {
+  .fc .fc-toolbar-title {
+    font-size: 20px;
+  }
+
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child),
+  .fc-direction-ltr .fc-toolbar > * > :not(:first-child){
+    width: 45px;
+    font-size: 13px;
+  }
+
+  .fc-theme-standard th {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .fc .fc-toolbar-title {
+    font-size: 20px;
+  }
+
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child),
+  .fc-direction-ltr .fc-toolbar > * > :not(:first-child){
+    width: 50px;
+    font-size: 13px;
+  }
+
+  .fc-theme-standard th, .fc .fc-view-harness {
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 426px) {
+  .fc .fc-toolbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  .fc-theme-standard th, .fc .fc-view-harness {
+    font-size: 10px;
+  }
+
+  .fc .fc-daygrid-body-natural, .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    margin-bottom: 0;
+    min-height: 12px;
+  }
+}
+
+@media(max-width: 323px) {
+  .fc .fc-toolbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 15px;
+  }
+
+  .fc-theme-standard th, .fc .fc-view-harness {
+    font-size: 10px;
+  }
+
+  .fc .fc-daygrid-body-natural, .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    margin-bottom: 0;
+    min-height: 12px;
+  }
+
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child),
+  .fc-direction-ltr .fc-toolbar > * > :not(:first-child){
+    width: 40px;
+    font-size: 10px;
+  }
+}
+
+/*=================================*/
+
+

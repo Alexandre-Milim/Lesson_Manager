@@ -1,0 +1,15 @@
+.btn{
+    border-radius: 10px;
+    height: 35px;
+    width: 295px;
+    border: none;
+    background-color: #8C52FF;
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#buttonnn[nome="Voltar"]{
+    margin-left: 103px;
+}

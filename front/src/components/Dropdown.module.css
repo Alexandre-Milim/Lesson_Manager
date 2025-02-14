@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.container {
+    display: flex;
+    margin: 10px;
+    top: 70px;
+    position: relative;
+    box-sizing: border-box;
+}
+.imgzinha{
+    width: 230px;
+    height: 180px;
+    border-radius: 7px;
+}
+.content {
+    margin-left: 250px;
+}
+.titulozin{
+    margin-top: 34px;
+    font-size: 33px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    width: 920px;
+    background-color: #8C52FF;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+}
+.dropdownContent {
+    position: relative;
+    top: -10px;
+    width: 920px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 160px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    background-color: #8C52FF;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    flex-direction: column;
+}
+.cardContainer {
+    margin-left: -44px;
+    position: relative;
+    left: 20px;
+    top: -15px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cardizin {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    height: 290px;
+    width: calc(50% - -115px); /* Ajuste a largura para 50% menos a margem */
+    box-sizing: border-box;
+}
+#email{
+    font-family: "Poppins", sans-serif;
+    font-weight: 250;
+    font-size: 10px;
+    color: #333;
+    opacity: 90%;
+}
+.textmuted {
+    color: #333;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    opacity: 70%;
+    letter-spacing: 1px;
+    position: relative;
+    top: -40px;
+}
+#nomePro{
+    font-family: "Poppins", sans-serif;
+    opacity: 60%;
+    font-weight: bold;
+    font-size: 13px;
+}
+.addButton{
+    background-color: #8C52FF;
+    width: 180px;
+    height: 25px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    top: -8px;
+    left: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.editIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FEBE00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 30px;
+    left: 248px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border: none;
+}
+
+.deleteButton {
+    position: relative;
+    top: 5px;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: -22px;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+#card-footer{
+    margin-top: -23px;
+}
+.editIcon a {
+    color: white !important;
+}
+.dropdownIcon {
+    margin-left: auto;
+}
+.dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addButtonNovo{
+    background-color: #8C52FF;
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+:root {
+    --cor-principal: #8C52FF;
+    --branco: #fff;
+    --cinza-claro: #F0F0F0;
+    --cinza-escuro: #8A8C98;
+    --preto: #000;
+    background-color: #F1F1F1;
+}
+.search{
+    left: 180px;
+    top: auto;
+    width: 600px;
+    height: 35px;
+    border-radius: 42px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 8px rgba(1, 0, 0, 0.3);
+}
+.search::placeholder{
+    font-size: 15px;
+    color: #9A9A9A;
+}
+.searchContainer {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 3%;
+    transform: translate(50%, 45%);
+    color: #6c757d;
+    pointer-events: none;
+}
+.search{
+    text-align: center;
+}
+
+/* Dropdown.module.css */
+
+/* Classes para controlar a animação do dropdown */
+.dropdownContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.show {
+    max-height: 500px; /* Altura máxima do dropdown quando está aberto */
+}
+
+@media (max-width: 768px) {
+    .container {
+        align-items: center;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .dropdownButton, .dropdownContent {
+        width: 100%;
+    }
+
+    .cardContainer {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: start;
+        overflow: auto;
+        width: 300px;
+    }
+
+    .editIcon {
+        left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .principal {
+        height: 100%;
+        position: relative;
+        top: 200px;
+    }
+
+    .dropdownButton {
+        position: relative;
+        width: 450px; /* Ajuste a largura do dropdownButton para 100% */
+        font-size: 18px;
+    }
+
+    .search{
+        width: 300px;
+    }
+
+    .cardContainer {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: start;
+        overflow: auto;
+        width: 300px;
+    }
+
+    .dropdownContent {
+        width: 450px;
+    }
+
+    .cardizin {
+        width: 220px;
+        left: 0px;
+    }
+    .imgzinha{
+        width: 200px;
+        height: 150px;
+    }
+    .cardContainer {
+        align-items: center;
+    }
+    .addButton {
+        width: 100%;
+        left: 0;
+
+    }
+
+    .buttonContainer {
+        justify-content: center;
+        position: relative;
+        left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        margin: 5px;
+    }
+    .dropdownContent{
+        width: 230px;
+    }
+
+    .titulozin{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .dropdownButton {
+        font-size: 16px;
+        padding: 8px;
+        width: 230px;
+    }
+
+    .cardizin {
+        width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .addButton {
+        width: 100%;
+        left: 0;
+        margin-top: 5px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    .editIcon {
+        left: 0;
+        margin-top: 10px;
+    }
+
+    .search {
+        width: 100%;
+        height: 30px;
+    }
+
+    .search::placeholder {
+        font-size: 12px;
+    }
+}

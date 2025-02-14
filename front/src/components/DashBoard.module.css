@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.dashboardContainer {
+    margin-top: 30px;
+    height: 100vh;
+}
+.ImgzinhaFooter{
+    width: 212px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 83px;
+}
+.content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 264px;
+    width: 77%;
+}
+
+.sliderContainer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ola {
+    font-size: 30px;
+    position: relative;
+    right: 270px;
+    color: #262A41;
+    margin-left: 20px;
+}
+
+.slide {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    width: 100%;
+}
+
+.slideImage {
+    max-width: 100%;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.qqqq {
+    background-color: #dadada;
+    min-width: 150px;
+    width: 180px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.scrollContainer {
+    margin-left: -9px;
+    display: flex;
+    height: 124px;
+    margin-top: 31px;
+    overflow-x: auto;
+    width: 99%;
+    padding: 10px 0;
+    gap: 11px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+    height: 12px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+    background: #f3f3f3;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+    background-color: #9364f3;
+    border-radius: 20px;
+    border: 3px solid #D9D9D9;
+    padding: 2px;
+}
+
+#cadastrosd {
+    color: rgb(102, 105, 124);
+    position: relative;
+    right: 438px;
+    top: 30px;
+}
+
+.qazul {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    background-color: #8C52FF;
+}
+
+.cadss {
+    position: relative;
+    top: 37px;
+    right: 1px;
+    display: flex;
+    gap: 83px;
+}
+
+#cad {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    width: 180px;
+    height: 45px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qbranco {
+    position: relative;
+    top: 39px;
+    right: 1px;
+    display: flex;
+    gap: 83px;
+    padding: 4px;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9364f3;
+    border-radius: 20px;
+    border: 3px solid #D9D9D9;
+    padding: 2px;
+}
+
+.h2Curso {
+    color: rgb(102, 105, 124);
+    position: relative;
+    right: 456px;
+    top: 28px;
+}
+
+:root {
+    --cor-principal: #8C52FF;
+    --branco: #fff;
+    --cinza-claro: #f0f0f0;
+    --cinza-escuro: #8A8C98;
+    --preto: #000;
+    background-color: #ffffff;
+}
+
+@media(max-width: 1441px) {
+    .content {
+        margin-left: 220px;
+    }
+
+    .ola{
+        margin-left: 0;
+    }
+
+    .scrollContainer {
+        width: 88%;
+    }
+}
+
+@media(max-width: 1300px) {
+    .content {
+        margin-left: 264px;
+    }
+
+    .ola {
+        margin-left: 20px;
+    }
+
+    .scrollContainer {
+        width: 99%;
+    }
+
+}
+
+@media(max-width: 1025px) {
+    .ola{
+        right: 174px;
+    }
+
+    .slideImage{
+        height: 224px;
+        width: 95%;
+    }
+
+    .h2Curso{
+        right: 358px;
+    }
+
+    #cadastrosd{
+        right: 30px;
+    }
+
+    .cadss, .qbranco{
+        gap: 20px;
+        right: 30px;
+    }
+
+    #cad, .qazul{
+        width: 150px;
+    }
+}
+
+@media(max-width: 769px) {
+    .content{
+        margin-left: 60px;
+        width: 100%;
+    }
+
+    .ola {
+        font-size: 26px;
+        right: 200px;
+    }
+
+}
+
+@media (max-width: 426px) {
+    .content {
+        margin-left: 15px;
+    }
+
+    .ola {
+        top: 17px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        right: 68px;
+    }
+
+    .h2Curso {
+        right: 0;
+        top: 0;
+    }
+
+    .cadss, .qbranco {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        right: 0px;
+        font-size: 13px;
+        width: 400px;
+    }
+
+    .qazul, #cad {
+        width: 100%;
+    }
+
+    .scrollContainer {
+        width: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #cadastrosd{
+        right: 0;
+    }
+
+    .slideImage {
+        max-width: 100%;
+        height: 200px; /* Ajuste a altura conforme necessário */
+        object-fit: fill;
+    }
+
+    .cardImage {
+        width: 100%;
+        height: 80px; /* Ajuste a altura conforme desejado */
+        object-fit: contain; /* Alterado de 'cover' para 'contain' */
+    }
+    .ImgzinhaFooter{
+        width: 126px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 60px;
+    }
+}
+
+@media (max-width: 376px) {
+    .sliderContainer {
+        display: none;
+    }
+    .content {
+
+        margin-left: 0;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .ola {
+        font-size: 20px;
+        right: 43px;
+        margin-bottom: 20px;
+    }
+
+    #cadastrosd {
+        position: static;
+        text-align: center;
+        margin-bottom: -18px;
+    }
+
+    .cadss, .qbranco {
+        margin-left: -20px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        width: 348px;
+    }
+
+    .qazul, #cad {
+        width: 100%;
+    }
+
+    #cadastrosd {
+        right: 100px;
+    }
+
+    .scrollContainer {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .ImgzinhaFooter{
+        width: 126px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    .sliderContainer {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .ola {
+        font-size: 20px;
+        right: 0;
+        margin-left: 0;
+        text-align: start;
+        margin-bottom: 20px;
+    }
+
+    #cadastrosd {
+        position: static;
+        text-align: center;
+    }
+
+    .cadss, .qbranco {
+        margin-left: -15px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 10px;
+        width: 284px;
+    }
+
+    .qazul, #cad {
+        width: 100%;
+    }
+
+    .scrollContainer {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ImgzinhaFooter{
+        width: 126px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 47px;
+    }
+}

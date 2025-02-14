@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.verticalNav {
+    background-image: url("/public/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 44px;
+    width: 155px;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.logozinha {
+    width: 151px;
+    height: auto;
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 62px;
+}
+
+.navbarNav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbarNav .navItem {
+    position: relative;
+    top: -72px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    opacity: 80%;
+    margin-left: 13px;
+}
+
+.navbarNav .navLink {
+    color: white;
+    text-decoration: none;
+}
+
+.navbarNav .navLink:hover {
+    text-decoration: underline;
+}
+
+#sair {
+    top: 296px;
+    position: relative;
+    font-weight: bold;
+    bottom: -300px;
+}
+
+.botaoMenu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+@media(max-width: 1025px) {
+    #sair{
+        top: 200px;
+    }
+}
+
+@media(max-width: 990px) {
+    .verticalNav {
+        left: -300px;
+        width: 100px;
+    }
+
+    .verticalNav[style*="left: 0px;"] {
+        left: 0 !important;
+    }
+
+    .botaoMenu {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: -10px;
+        left: -10px;
+    }
+    .logozinha {
+        width: 120px;
+        height: auto;
+        margin-top: -24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 62px;
+    }
+}
+@media(max-width: 320px) {
+    .verticalNav{
+        width: 50px;
+    }
+    a.navLink{
+        position: relative;
+        right: 22px;
+        text-align: center;
+        top: 35px;
+        font-size: 16px;
+    }
+    .logozinha{
+        position: relative;
+        top: 30px;
+        right: 22px;
+        width: 100px;
+        height: auto;
+    }
+}
+

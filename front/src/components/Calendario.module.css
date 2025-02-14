@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-principal: #8C52FF;
+    --branco: #fff;
+    --cinza-claro: #000;
+    --cinza-escuro: #8A8C98;
+    --preto: #000;
+}
+
+/*SCROOLSBARS========================*/
+.holidayList::-webkit-scrollbar {
+    width: 10px;
+}
+
+.holidayList::-webkit-scrollbar-track {
+    background: #F0F0F0;
+    border-radius: 5px;
+}
+
+.holidayList::-webkit-scrollbar-thumb {
+    background-color: var(--cor-principal);
+    border-radius: 5px;
+    border: 2px solid #F0F0F0;
+}
+
+.holidayList::-webkit-scrollbar-thumb:hover {
+    background-color: var(--preto);
+}
+/*=======================*/
+
+.principal {
+    display: flex;
+}
+
+.calendario {
+    padding: 10px;
+    margin-left: 245px;
+    background-color: #fff;
+}
+
+.tituloCale {
+    font-size: 40px;
+}
+
+.calendarContainer {
+    padding: 20px;
+    margin-top: 20px;
+    width: 870px;
+}
+
+.calendar {
+    margin-bottom: 0;
+}
+
+.tituloHoliday {
+    margin: 15px;
+    font-size: 25px;
+    color: var(--cinza-escuro);
+    margin-left: 0;
+}
+
+.tituloHolidayH2 {
+    margin: 15px;
+    font-size: 25px;
+    color: var(--cinza-escuro);
+    margin-left: 0;
+    display: none;
+}
+
+.holidayListsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.holidayList {
+    list-style-type: none;
+    padding: 0;
+    width: 48%;
+    height: 200px;
+    overflow: auto;
+}
+
+.holidayContent {
+    display: flex;
+    align-items: center;
+}
+
+.holidayItem {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.40);
+    width: 100%;
+    margin-left: 15px;
+    flex-direction: column;
+    background: var(--branco);
+}
+
+.holidayItemPonto {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: -3px 7px 8px -2px rgba(0,0,0,0.40);
+    width: 100%;
+    margin-left: 15px;
+    background: var(--branco);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.holidayItemImage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.holidayImage {
+    width: 30px;
+    height: 30px;
+}
+
+.holidayImagePonto {
+    width: 30px;
+    height: 30px;
+    background-color: #FEBE00;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.ImagePontoBotao {
+    border: none;
+    background-color: #fff;
+    display: flex;
+}
+
+.ImagePontoBotao:hover {
+    cursor: pointer;
+}
+
+
+.holiday {
+    font-weight: bold;
+}
+
+.holidayData {
+    color: red;
+}
+
+.holidayItemNovo {
+    width: 100%;
+}
+
+
+@media(max-width: 1441px) {
+    .principal {
+        display: initial;
+    }
+}
+
+@media (max-width: 990px) {
+    .calendario {
+        margin-left: 0;
+    }
+
+    .tituloCale {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 770px) {
+    .holidayListsContainer {
+        display: initial;
+    }
+
+    .calendarContainer {
+        width: 600px;
+    }
+
+    .holidayList {
+        width: 80%;
+    }
+
+    .tituloHolidayH2 {
+        display: block;
+    }
+}
+
+@media(max-width: 630px) {
+    .calendarContainer {
+        width: 400px;
+    }
+}
+
+@media(max-width: 530px) {
+    .calendarContainer {
+        width: 350px;
+    }
+}
+
+@media(max-width: 426px) {
+    .tituloCale {
+        font-size: 30px;
+    }
+
+    .calendarContainer {
+        width: 300px;
+    }
+
+    .tituloHoliday, .tituloHolidayH2 {
+        font-size: 18px;
+    }
+
+    .holidayItem, .holidayItemImage {
+        margin-left: 0;
+    }
+
+    .holidayImage, .holidayImagePonto {
+        height: 25px;
+        width: 25px;
+    }
+
+    .holiday, .holidayData {
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width: 376px) {
+    .calendarContainer {
+        width: 250px;
+    }
+
+    .holidayImagePonto {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media(max-width: 323px) {
+    .calendario {
+        padding: 15px;
+    }
+
+    .calendarContainer {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .tituloHoliday, .tituloHolidayH2 {
+        font-size: 14px;
+    }
+}
+
+
